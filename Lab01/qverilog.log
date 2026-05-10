@@ -1,0 +1,70 @@
+QuestaSim qverilog 10.0b Compiler 2011.05 May  5 2011
+qverilog top.sv 
+-- Compiling module top
+-- Importing package mtiUvm.uvm_pkg (uvm-1.0p1 Built-in)
+-- Importing package pkg
+
+Top level modules:
+	top
++ C:\questasim_10.0b\win32/vsim -lib work top -c -do "run -all; quit -f" -appendlog -l qverilog.log -vopt
+# vsim -appendlog -do {run -all; quit -f} -l qverilog.log -lib work -c -vopt top 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top(fast)
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# transh[ 0]: (trans@455) { data: 'd33  address: 'd15  write: 1  } 
+# transh[ 1]: (trans@459) { data: 'd245  address: 'd10  write: 'd0  } 
+# transh[ 2]: (trans@463) { data: 'd176  address: 'd11  write: 'd0  } 
+# transh[ 3]: (trans@467) { data: 'd253  address: 'd8  write: 'd0  } 
+# transh[ 4]: (trans@471) { data: 'd15  address: 'd9  write: 'd0  } 
+# transh[ 5]: (trans@475) { data: 'd165  address: 'd10  write: 1  } 
+# transh[ 6]: (trans@479) { data: 'd121  address: 'd2  write: 1  } 
+# transh[ 7]: (trans@483) { data: 'd73  address: 'd3  write: 1  } 
+# transh[ 8]: (trans@487) { data: 'd233  address: 'd2  write: 1  } 
+# transh[ 9]: (trans@491) { data: 'd74  address: 'd8  write: 1  } 
+# */*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 2]  trans     -     @463 
+#   data      integral  64    'd165
+#   address   integral  12    'd10 
+#   write     integral  1     1    
+# ---------------------------------
+# ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# transh_copy  trans     -     @495 
+#   data       integral  64    'd165
+#   address    integral  12    'd10 
+#   write      integral  1     1    
+# ----------------------------------
+# COMPARE SUCCESSFUL
+# ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# transh[ 2]   trans     -     @463 
+#   data       integral  64    'd165
+#   address    integral  12    'd10 
+#   write      integral  1     1    
+# ----------------------------------
+#  quit -f 

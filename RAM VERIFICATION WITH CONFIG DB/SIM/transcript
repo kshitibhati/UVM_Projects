@@ -1,0 +1,84 @@
+# vsim -do {run -all;exit} -c -novopt ram_top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\RAM VERIFICATION WITH CONFIG DB\SIM\work.ram_top
+# Refreshing H:\UVM\RAM VERIFICATION WITH CONFIG DB\SIM\work.ram_pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.ram_pkg
+# Loading work.ram_top
+# Refreshing H:\UVM\RAM VERIFICATION WITH CONFIG DB\SIM\work.ram_if
+# Loading work.ram_if
+# Refreshing H:\UVM\RAM VERIFICATION WITH CONFIG DB\SIM\work.ram_16x8
+# Loading work.ram_16x8
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test ram_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               ram_test                -     @461 
+#   env_h                    ram_env                 -     @475 
+#     ragent_h               ram_ragent              -     @499 
+#       rdr_h                ram_rdr                 -     @523 
+#         rsp_port           uvm_analysis_port       -     @538 
+#         sqr_pull_port      uvm_seq_item_pull_port  -     @530 
+#       rmon_h               ram_rmon                -     @508 
+#         an_rport           uvm_analysis_port       -     @515 
+#       rseqr_h              ram_rseqr               -     @546 
+#         rsp_export         uvm_analysis_export     -     @553 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @647 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     wagent_h               ram_wagent              -     @492 
+#       wdr_h                ram_wdr                 -     @682 
+#         rsp_port           uvm_analysis_port       -     @697 
+#         sqr_pull_port      uvm_seq_item_pull_port  -     @689 
+#       wmon_h               ram_wmon                -     @667 
+#         an_wport           uvm_analysis_port       -     @674 
+#       wseqr_h              ram_wseqr               -     @705 
+#         rsp_export         uvm_analysis_export     -     @712 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @806 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 995: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    3
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 1
+#           Attempting to use alternate WLF file "./wlftanfycw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftanfycw
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_root.svh(392)
+#    Time: 995 ns  Iteration: 52  Instance: /ram_top

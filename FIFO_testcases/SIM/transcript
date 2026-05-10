@@ -1,0 +1,151 @@
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +UVM_TESTNAME=fifo_wr_after_full_test -novopt fifo_top 
+# Refreshing H:\UVM\FIFO_testcases\SIM\work.fifo_top
+# Refreshing H:\UVM\FIFO_testcases\SIM\work.fifo_pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.fifo_pkg
+# Loading work.fifo_top
+# Refreshing H:\UVM\FIFO_testcases\SIM\work.fifo_if
+# Loading work.fifo_if
+# Refreshing H:\UVM\FIFO_testcases\SIM\work.fifo
+# Loading work.fifo
+# ** Warning: (vsim-3017) ../TOP/fifo_top.sv(21): [TFMPC] - Too few port connections. Expected 9, found 8.
+#         Region: /fifo_top/dut
+# ** Warning: (vsim-3722) ../TOP/fifo_top.sv(21): [TFMPC] - Missing connection for port 'almost_full'.
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+#  
+add wave -r /*
+add wave -position 18  sim:/fifo_top/dut/mem
+run -all
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test fifo_wr_after_full_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               fifo_wr_after_full_test     -     @460 
+#   env_h                    fifo_env                    -     @469 
+#     ragent_h               fifo_rdagent                -     @492 
+#       rdr_h                fifo_rdrv                   -     @617 
+#         rsp_port           uvm_analysis_port           -     @632 
+#         sqr_pull_port      uvm_seq_item_pull_port      -     @624 
+#       rmon_h               fifo_rdmon                  -     @602 
+#         rmon_an_port       uvm_analysis_port           -     @609 
+#       rseqr_h              fifo_rdseqr                 -     @640 
+#         rsp_export         uvm_analysis_export         -     @647 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @741 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     sb_h                   fifo_sb                     -     @499 
+#       rmon_an              uvm_tlm_analysis_fifo #(T)  -     @553 
+#         analysis_export    uvm_analysis_imp            -     @592 
+#         get_ap             uvm_analysis_port           -     @584 
+#         get_peek_export    uvm_get_peek_imp            -     @568 
+#         put_ap             uvm_analysis_port           -     @576 
+#         put_export         uvm_put_imp                 -     @560 
+#       wmon_an              uvm_tlm_analysis_fifo #(T)  -     @506 
+#         analysis_export    uvm_analysis_imp            -     @545 
+#         get_ap             uvm_analysis_port           -     @537 
+#         get_peek_export    uvm_get_peek_imp            -     @521 
+#         put_ap             uvm_analysis_port           -     @529 
+#         put_export         uvm_put_imp                 -     @513 
+#     wagent_h               fifo_wagent                 -     @485 
+#       wdr_h                fifo_wrdrv                  -     @776 
+#         rsp_port           uvm_analysis_port           -     @791 
+#         sqr_pull_port      uvm_seq_item_pull_port      -     @783 
+#       wmon_h               fifo_wrmon                  -     @761 
+#         wmon_an_port       uvm_analysis_port           -     @768 
+#       wseqr_h              fifo_wrseqr                 -     @799 
+#         rsp_export         uvm_analysis_export         -     @806 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @900 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+# ------------------------------------------------------------------
+# 
+#  SUCCESS ! RD_data =  24 :  24 = temp_data
+#  SUCCESS ! RD_data = 116 : 116 = temp_data
+#  SUCCESS ! RD_data = 247 : 247 = temp_data
+#  SUCCESS ! RD_data = 241 : 241 = temp_data
+#  SUCCESS ! RD_data =  93 :  93 = temp_data
+#  SUCCESS ! RD_data = 155 : 155 = temp_data
+#  SUCCESS ! RD_data =  69 :  69 = temp_data
+#  SUCCESS ! RD_data = 201 : 201 = temp_data
+#  SUCCESS ! RD_data = 141 : 141 = temp_data
+#  SUCCESS ! RD_data =  57 :  57 = temp_data
+#  SUCCESS ! RD_data =  28 :  28 = temp_data
+#  SUCCESS ! RD_data =  67 :  67 = temp_data
+#  SUCCESS ! RD_data =  99 :  99 = temp_data
+#  SUCCESS ! RD_data =  51 :  51 = temp_data
+#  SUCCESS ! RD_data = 108 : 108 = temp_data
+#  SUCCESS ! RD_data =  96 :  96 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  SUCCESS ! RD_data =  70 :  70 = temp_data
+#  DATA MISMATCH ! RD_data = 234 :  70 = temp_data
+#  DATA MISMATCH ! RD_data =  95 :  70 = temp_data
+#  DATA MISMATCH ! RD_data =  15 : 234 = temp_data
+#  DATA MISMATCH ! RD_data = 111 :  95 = temp_data
+#  DATA MISMATCH ! RD_data =  67 :  15 = temp_data
+#  DATA MISMATCH ! RD_data = 135 : 111 = temp_data
+#  DATA MISMATCH ! RD_data =   2 :  67 = temp_data
+#  DATA MISMATCH ! RD_data = 128 : 135 = temp_data
+#  DATA MISMATCH ! RD_data =  51 :   2 = temp_data
+#  DATA MISMATCH ! RD_data = 156 : 128 = temp_data
+#  DATA MISMATCH ! RD_data = 200 :  51 = temp_data
+#  DATA MISMATCH ! RD_data =   5 : 156 = temp_data
+#  DATA MISMATCH ! RD_data =  44 : 200 = temp_data
+#  DATA MISMATCH ! RD_data = 216 :   5 = temp_data
+#  DATA MISMATCH ! RD_data = 190 :  44 = temp_data
+#  DATA MISMATCH ! RD_data =  25 : 216 = temp_data
+#  DATA MISMATCH ! RD_data = 110 : 190 = temp_data
+#  DATA MISMATCH ! RD_data =  58 :  25 = temp_data
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 685: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    3
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_root.svh(392)
+#    Time: 685 ns  Iteration: 52  Instance: /fifo_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_root.svh line 392

@@ -1,0 +1,77 @@
+# vsim -do {run -all;exit} -c -novopt ram_top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\RAM_UVM_WITH_CONFIG_DB\SIM\work.ram_top
+# Refreshing H:\UVM\RAM_UVM_WITH_CONFIG_DB\SIM\work.ram_pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.ram_pkg
+# Loading work.ram_top
+# Refreshing H:\UVM\RAM_UVM_WITH_CONFIG_DB\SIM\work.ram_if
+# Loading work.ram_if
+# Refreshing H:\UVM\RAM_UVM_WITH_CONFIG_DB\SIM\work.ram
+# Loading work.ram
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test ram_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------
+# Name                     Type                        Size  Value
+# ----------------------------------------------------------------
+# uvm_test_top             ram_test                    -     @461 
+#   env_h                  ram_env                     -     @475 
+#     ragent_h             ram_ragent                  -     @499 
+#       rmon_h             ram_rmon                    -     @610 
+#         rmon_an_port     uvm_analysis_port           -     @617 
+#     sb_h                 ram_sb                      -     @506 
+#       r_an_fifoh         uvm_tlm_analysis_fifo #(T)  -     @560 
+#         analysis_export  uvm_analysis_imp            -     @599 
+#         get_ap           uvm_analysis_port           -     @591 
+#         get_peek_export  uvm_get_peek_imp            -     @575 
+#         put_ap           uvm_analysis_port           -     @583 
+#         put_export       uvm_put_imp                 -     @567 
+#       w_an_fifoh         uvm_tlm_analysis_fifo #(T)  -     @513 
+#         analysis_export  uvm_analysis_imp            -     @552 
+#         get_ap           uvm_analysis_port           -     @544 
+#         get_peek_export  uvm_get_peek_imp            -     @528 
+#         put_ap           uvm_analysis_port           -     @536 
+#         put_export       uvm_put_imp                 -     @520 
+#     wagent_h             ram_wagent                  -     @492 
+#       wmon_h             ram_wmon                    -     @631 
+#         wmon_an_port     uvm_analysis_port           -     @638 
+# ----------------------------------------------------------------
+# 
+# UVM_FATAL @ 0: reporter@@trans_h [STRITM] sequence_item has null sequencer
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    2
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    1
+# ** Report counts by id
+# [RNTST]     1
+# [STRITM]     1
+# [UVMTOP]     1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "./wlft3xhynb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3xhynb
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 0 ns  Iteration: 38  Region: /uvm_pkg::uvm_sequence_base::start

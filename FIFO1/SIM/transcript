@@ -1,0 +1,49 @@
+# vsim +UVM_TESTNAME=fifo_almost_full_test -do {run -all;exit} -c -novopt fifo_top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\FIFO1\SIM\work.fifo_top
+# Refreshing H:\UVM\FIFO1\SIM\work.fifo_pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.fifo_pkg
+# Loading work.fifo_top
+# Refreshing H:\UVM\FIFO1\SIM\work.fifo_if
+# Loading work.fifo_if
+# Refreshing H:\UVM\FIFO1\SIM\work.fifo
+# Loading work.fifo
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_WARNING @ 0: reporter [BDTYP] Cannot create a component of type 'fifo_almost_full_test' because it is not registered with the factory.
+# UVM_FATAL @ 0: reporter [INVTST] Requested test from command line +UVM_TESTNAME=fifo_almost_full_test not found.
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    0
+# UVM_WARNING :    1
+# UVM_ERROR :    0
+# UVM_FATAL :    1
+# ** Report counts by id
+# [BDTYP]     1
+# [INVTST]     1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 129
+#           Attempting to use alternate WLF file "./wlft2ev6t5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2ev6t5
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 0 ns  Iteration: 0  Instance: /fifo_top

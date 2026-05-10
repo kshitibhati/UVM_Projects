@@ -1,0 +1,8 @@
+# vsim +TEST1 +nowarn3829 -coverage -do {coverage save -onexit -assert -directive -cvg -codeAll mem_cov1;run -all;exit} -l test1_sim.log -c -sva -sv_seed random -novopt work.top 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 1
+#           Attempting to use alternate WLF file "./wlft0728ec".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0728ec
+# ** Error: (vsim-3170) Could not find 'H:\UVM\RAM\SIM\work.top'.
+# Error loading design

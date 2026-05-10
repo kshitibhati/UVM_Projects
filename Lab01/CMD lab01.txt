@@ -1,0 +1,9 @@
+Lab01 cmd :--------->
+
+vlib work
+
+vlog pkg.sv top.sv
+
+
+vsim -novopt top -c -do "run -all;exit"
+

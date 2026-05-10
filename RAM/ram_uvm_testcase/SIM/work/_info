@@ -1,0 +1,144 @@
+m255
+K3
+13
+cModel Technology
+Z0 dB:\ram_uvm\SIM
+T_opt
+Z1 V5<2PKi?mXQCbB1JI@gcYI0
+Z2 04 7 4 work ram_top fast 0
+Z3 =1-74867a20a901-5e0f236c-3-104
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;10.0b;49
+Z7 dB:\ram_uvm\SIM
+vram
+Z8 !s100 IJMW;BW>nBzeE1`9LMDDM3
+Z9 IQTgN^3loMCVTX_lOUP^j62
+Z10 V@ML:S;@nBPIlo?^0]XzRk0
+Z11 dH:\UVM\RAM\ram_uvm_testcase\SIM
+Z12 w1572934219
+Z13 8../RTL/ram.v
+Z14 F../RTL/ram.v
+L0 7
+Z15 OE;L;10.0b;49
+r1
+!s85 0
+31
+Z16 !s108 1578050922.620000
+Z17 !s107 ../TEST//ram_rst_ctrl_test.sv|../TEST//ram_wr_ctrl_test.sv|../TEST//ram_odd_addr_test.sv|../TEST//ram_even_addr_test.sv|../TEST//ram_test.sv|../ENV//ram_env.sv|../ENV//ram_sb.sv|../ENV//ram_ragent.sv|../ENV//ram_wagent.sv|../ENV//ram_rmon.sv|../ENV//ram_wmon.sv|../ENV//ram_rdr.sv|../ENV//ram_wdr.sv|../ENV//ram_rseqr.sv|../ENV//ram_wseqr.sv|../ENV//ram_rst_seqs.sv|../ENV//ram_rseqs.sv|../ENV//ram_wseqs.sv|../ENV//ram_rtrans.sv|../ENV//ram_wtrans.sv|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_deprecated_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_reg_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_callback_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_sequence_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/tlm1/uvm_tlm_imps.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_tlm_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_printer_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_object_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_phase_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_message_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_version_defines.svh|C:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/uvm_macros.svh|../TOP/ram_top.sv|../TEST/ram_pkg.sv|../ENV/interface.sv|../RTL/ram.v|
+Z18 !s90 -coveropt|3|+cover|+acc|../RTL/ram.v|../ENV/interface.sv|../TEST/ram_pkg.sv|../TOP/ram_top.sv|+incdir+../ENV/|+incdir+../TEST/|
+Z19 !s102 -coveropt 3 +cover
+Z20 o-coveropt 3 +cover +acc -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -nocovercells
+Z21 !s92 -coveropt 3 +cover +acc +incdir+../ENV/ +incdir+../TEST/ -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -nocovercells
+Yram_if
+Z22 DXx6 sv_std 3 std 0 22 :CP]PHbGOHGT_H:3KF`8L2
+Z23 !s100 3K4gDG0o>h3?T<j_cX`<^3
+Z24 IYl7j3bmh3Y53^l1?Qdom00
+Z25 V:lDK`YdM5ZSfB?iMGVN6z3
+Z26 !s105 interface_sv_unit
+S1
+R11
+Z27 w1577076651
+Z28 8../ENV/interface.sv
+Z29 F../ENV/interface.sv
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+R19
+R20
+R21
+Xram_pkg
+R22
+Z30 DXx6 mtiUvm 7 uvm_pkg 0 22 8eb@ESBO]d@L>K^c5RzQ31
+Z31 !s100 AW5kLV:1`:3JfF;jLidiV1
+Z32 I0Cfdc7]3S^h156inBI=4@1
+Z33 V0Cfdc7]3S^h156inBI=4@1
+S1
+R11
+Z34 w1577084636
+Z35 8../TEST/ram_pkg.sv
+Z36 F../TEST/ram_pkg.sv
+Z37 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/uvm_macros.svh
+Z38 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_version_defines.svh
+Z39 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_message_defines.svh
+Z40 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_phase_defines.svh
+Z41 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_object_defines.svh
+Z42 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_printer_defines.svh
+Z43 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_tlm_defines.svh
+Z44 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/tlm1/uvm_tlm_imps.svh
+Z45 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_sequence_defines.svh
+Z46 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_callback_defines.svh
+Z47 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_reg_defines.svh
+Z48 FC:/questasim_10.0b/uvm-1.0p1/../verilog_src/uvm-1.0p1/src/macros/uvm_deprecated_defines.svh
+Z49 F../ENV//ram_wtrans.sv
+Z50 F../ENV//ram_rtrans.sv
+Z51 F../ENV//ram_wseqs.sv
+Z52 F../ENV//ram_rseqs.sv
+Z53 F../ENV//ram_rst_seqs.sv
+Z54 F../ENV//ram_wseqr.sv
+Z55 F../ENV//ram_rseqr.sv
+Z56 F../ENV//ram_wdr.sv
+Z57 F../ENV//ram_rdr.sv
+Z58 F../ENV//ram_wmon.sv
+Z59 F../ENV//ram_rmon.sv
+Z60 F../ENV//ram_wagent.sv
+Z61 F../ENV//ram_ragent.sv
+Z62 F../ENV//ram_sb.sv
+Z63 F../ENV//ram_env.sv
+Z64 F../TEST//ram_test.sv
+Z65 F../TEST//ram_even_addr_test.sv
+Z66 F../TEST//ram_odd_addr_test.sv
+Z67 F../TEST//ram_wr_ctrl_test.sv
+Z68 F../TEST//ram_rst_ctrl_test.sv
+L0 1
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+R19
+R20
+R21
+vram_top
+R22
+R30
+Z69 DXx4 work 7 ram_pkg 0 22 0Cfdc7]3S^h156inBI=4@1
+Z70 !s100 R^>ecz;zH^cdOM5JXVm^m3
+Z71 I4SZW@NPbKm^gaXC2EMMCg1
+Z72 VjD4N<WdKZCRWReb^eU:<[3
+Z73 !s105 ram_top_sv_unit
+S1
+R11
+Z74 w1577083819
+Z75 8../TOP/ram_top.sv
+Z76 F../TOP/ram_top.sv
+R37
+R38
+R39
+R40
+R41
+R42
+R43
+R44
+R45
+R46
+R47
+R48
+L0 2
+R15
+r1
+!s85 0
+31
+R16
+R17
+R18
+R19
+R20
+R21

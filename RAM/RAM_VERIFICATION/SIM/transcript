@@ -1,0 +1,113 @@
+# vsim -do {run -all;exit} -c -novopt ram_top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\RAM\SIM\work.ram_top
+# Refreshing H:\UVM\RAM\SIM\work.ram_pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.ram_pkg
+# Loading work.ram_top
+# Refreshing H:\UVM\RAM\SIM\work.ram_if
+# Loading work.ram_if
+# Refreshing H:\UVM\RAM\SIM\work.ram
+# Loading work.ram
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test ram_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               ram_test                    -     @460 
+#   env_h                    ram_env                     -     @469 
+#     ragent_h               ram_ragent                  -     @492 
+#       rdr_h                ram_rdr                     -     @617 
+#         rsp_port           uvm_analysis_port           -     @632 
+#         sqr_pull_port      uvm_seq_item_pull_port      -     @624 
+#       rmon_h               ram_rmon                    -     @602 
+#         rmon_an_port       uvm_analysis_port           -     @609 
+#       rseqr_h              ram_rseqr                   -     @640 
+#         rsp_export         uvm_analysis_export         -     @647 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @741 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     sb_h                   ram_sb                      -     @499 
+#       rmon_an              uvm_tlm_analysis_fifo #(T)  -     @553 
+#         analysis_export    uvm_analysis_imp            -     @592 
+#         get_ap             uvm_analysis_port           -     @584 
+#         get_peek_export    uvm_get_peek_imp            -     @568 
+#         put_ap             uvm_analysis_port           -     @576 
+#         put_export         uvm_put_imp                 -     @560 
+#       wmon_an              uvm_tlm_analysis_fifo #(T)  -     @506 
+#         analysis_export    uvm_analysis_imp            -     @545 
+#         get_ap             uvm_analysis_port           -     @537 
+#         get_peek_export    uvm_get_peek_imp            -     @521 
+#         put_ap             uvm_analysis_port           -     @529 
+#         put_export         uvm_put_imp                 -     @513 
+#     wagent_h               ram_wagent                  -     @485 
+#       wdr_h                ram_wdr                     -     @776 
+#         rsp_port           uvm_analysis_port           -     @791 
+#         sqr_pull_port      uvm_seq_item_pull_port      -     @783 
+#       wmon_h               ram_wmon                    -     @761 
+#         wmon_an_port       uvm_analysis_port           -     @768 
+#       wseqr_h              ram_wseqr                   -     @799 
+#         rsp_export         uvm_analysis_export         -     @806 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @900 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+# ------------------------------------------------------------------
+# 
+#  SUCCESS ! RD_data =  15 :  15 = temp_data
+#  SUCCESS ! RD_data = 171 : 171 = temp_data
+#  SUCCESS ! RD_data = 114 : 114 = temp_data
+#  SUCCESS ! RD_data =  47 :  47 = temp_data
+#  SUCCESS ! RD_data =  47 :  47 = temp_data
+#  SUCCESS ! RD_data = 114 : 114 = temp_data
+#  SUCCESS ! RD_data = 114 : 114 = temp_data
+#  SUCCESS ! RD_data =  62 :  62 = temp_data
+#  SUCCESS ! RD_data =  47 :  47 = temp_data
+#  SUCCESS ! RD_data =  99 :  99 = temp_data
+#  SUCCESS ! RD_data =  47 :  47 = temp_data
+#  SUCCESS ! RD_data =  47 :  47 = temp_data
+#  SUCCESS ! RD_data =  47 :  47 = temp_data
+#  SUCCESS ! RD_data =  15 :  15 = temp_data
+#  SUCCESS ! RD_data =  98 :  98 = temp_data
+#  SUCCESS ! RD_data = 171 : 171 = temp_data
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 395: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    3
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 1
+#           Attempting to use alternate WLF file "./wlftjd52sn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjd52sn
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_root.svh(392)
+#    Time: 395 ns  Iteration: 52  Instance: /ram_top

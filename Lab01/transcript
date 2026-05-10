@@ -1,0 +1,250 @@
+# vsim -do {run -all;exit} -c -novopt top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing D:\DG_AR\UVM\Lab01\work.top
+# Refreshing D:\DG_AR\UVM\Lab01\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 0]  trans     -     @455 
+#   data      integral  64    'd33 
+#   address   integral  12    'd15 
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 1]  trans     -     @459 
+#   data      integral  64    'd245
+#   address   integral  12    'd10 
+#   write     integral  1     'd0  
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 2]  trans     -     @463 
+#   data      integral  64    'd176
+#   address   integral  12    'd11 
+#   write     integral  1     'd0  
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 3]  trans     -     @467 
+#   data      integral  64    'd253
+#   address   integral  12    'd8  
+#   write     integral  1     'd0  
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 4]  trans     -     @471 
+#   data      integral  64    'd15 
+#   address   integral  12    'd9  
+#   write     integral  1     'd0  
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 5]  trans     -     @475 
+#   data      integral  64    'd165
+#   address   integral  12    'd10 
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 6]  trans     -     @479 
+#   data      integral  64    'd121
+#   address   integral  12    'd2  
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 7]  trans     -     @483 
+#   data      integral  64    'd73 
+#   address   integral  12    'd3  
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 8]  trans     -     @487 
+#   data      integral  64    'd233
+#   address   integral  12    'd2  
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 9]  trans     -     @491 
+#   data      integral  64    'd74 
+#   address   integral  12    'd8  
+#   write     integral  1     1    
+# ---------------------------------
+# */*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 2]  trans     -     @463 
+#   data      integral  64    'd165
+#   address   integral  12    'd10 
+#   write     integral  1     1    
+# ---------------------------------
+# transh_copy: (trans@495) { data: 'd165  address: 'd10  write: 1  } 
+# COMPARE SUCCESSFUL
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 2]  trans     -     @463 
+#   data      integral  64    'd165
+#   address   integral  12    'd10 
+#   write     integral  1     1    
+# ---------------------------------
+# exit 
+# vsim -do {run -all;exit} -c -novopt top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab01\work.top
+# Refreshing H:\UVM\Lab01\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 0]  trans     -     @455 
+#   data      integral  64    'd33 
+#   address   integral  12    'd15 
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 1]  trans     -     @459 
+#   data      integral  64    'd245
+#   address   integral  12    'd10 
+#   write     integral  1     'd0  
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 2]  trans     -     @463 
+#   data      integral  64    'd176
+#   address   integral  12    'd11 
+#   write     integral  1     'd0  
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 3]  trans     -     @467 
+#   data      integral  64    'd253
+#   address   integral  12    'd8  
+#   write     integral  1     'd0  
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 4]  trans     -     @471 
+#   data      integral  64    'd15 
+#   address   integral  12    'd9  
+#   write     integral  1     'd0  
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 5]  trans     -     @475 
+#   data      integral  64    'd165
+#   address   integral  12    'd10 
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 6]  trans     -     @479 
+#   data      integral  64    'd121
+#   address   integral  12    'd2  
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 7]  trans     -     @483 
+#   data      integral  64    'd73 
+#   address   integral  12    'd3  
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 8]  trans     -     @487 
+#   data      integral  64    'd233
+#   address   integral  12    'd2  
+#   write     integral  1     1    
+# ---------------------------------
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 9]  trans     -     @491 
+#   data      integral  64    'd74 
+#   address   integral  12    'd8  
+#   write     integral  1     1    
+# ---------------------------------
+# */*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 2]  trans     -     @463 
+#   data      integral  64    'd165
+#   address   integral  12    'd10 
+#   write     integral  1     1    
+# ---------------------------------
+# transh_copy: (trans@495) { data: 'd165  address: 'd10  write: 1  } 
+# COMPARE SUCCESSFUL
+# ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# transh[ 2]  trans     -     @463 
+#   data      integral  64    'd165
+#   address   integral  12    'd10 
+#   write     integral  1     1    
+# ---------------------------------
+# exit 

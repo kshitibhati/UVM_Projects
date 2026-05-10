@@ -1,0 +1,2153 @@
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing D:\DG_AR\UVM\Lab02\SIM\work.top
+# Refreshing D:\DG_AR\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\Users\hi\Documents\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 629193526
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../agent_top/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../agent_top/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../agent_top/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../agent_top/test.sv(51) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/test.sv(57) @ 0: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(60) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../agent_top/test.sv(64) @ 0: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../agent_top/test.sv(69) @ 0: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../agent_top/test.sv(74) @ 0: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../agent_top/test.sv(79) @ 0: uvm_test_top [test] THIS IS FINAL PHASE IN TEST --info
+# UVM_ERROR ../agent_top/test.sv(80) @ 0: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/test.sv(81) @ 0: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 0: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 0: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 0: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   36
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     8
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     8
+# [test]     9
+# ** Note: $finish    : C:/Users/hi/Documents/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 0 ns  Iteration: 184  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2328018446
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     1
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2355555990
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     1
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2638662070
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     1
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2223626318
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     1
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2420775734
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     1
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2248811918
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     1
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2341078794
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     1
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3211409414
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   36
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     7
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     8
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2596942366
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   37
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     8
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     8
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3794428410
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   13
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     1
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3104478862
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   37
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     8
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     8
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3807118010
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/agt_top.sv(90) @ 10: uvm_test_top.agnt_top_h [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   37
+# UVM_WARNING :    2
+# UVM_ERROR :    2
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     8
+# [ERROR]     2
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     2
+# [ram_agent]     8
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 4262211866
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/Agent.sv(81) @ 10: uvm_test_top.agnt_top_h.agnth [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   38
+# UVM_WARNING :    3
+# UVM_ERROR :    3
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     8
+# [ERROR]     3
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     3
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3702262162
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/driver.sv(76) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS FINAL PHASE IN DRIVER
+# UVM_ERROR ../agent_top/driver.sv(77) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/driver.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/driver.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   39
+# UVM_WARNING :    4
+# UVM_ERROR :    4
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     9
+# [ERROR]     4
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     4
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3400975490
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/driver.sv(76) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS FINAL PHASE IN DRIVER
+# UVM_ERROR ../agent_top/driver.sv(77) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/driver.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/driver.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   39
+# UVM_WARNING :    4
+# UVM_ERROR :    4
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     9
+# [ERROR]     4
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     4
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3912700742
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/driver.sv(76) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS FINAL PHASE IN DRIVER
+# UVM_ERROR ../agent_top/driver.sv(77) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/driver.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/driver.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   39
+# UVM_WARNING :    4
+# UVM_ERROR :    4
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     9
+# [ERROR]     4
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     4
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 4262949418
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/driver.sv(76) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS FINAL PHASE IN DRIVER
+# UVM_ERROR ../agent_top/driver.sv(77) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/driver.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/driver.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   39
+# UVM_WARNING :    4
+# UVM_ERROR :    4
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     9
+# [ERROR]     4
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     4
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3075953398
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/driver.sv(76) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS FINAL PHASE IN DRIVER
+# UVM_ERROR ../agent_top/driver.sv(77) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/driver.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/driver.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   39
+# UVM_WARNING :    4
+# UVM_ERROR :    4
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     9
+# [ERROR]     4
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     4
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3069672766
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/driver.sv(76) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS FINAL PHASE IN DRIVER
+# UVM_ERROR ../agent_top/driver.sv(77) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/driver.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/driver.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   39
+# UVM_WARNING :    4
+# UVM_ERROR :    4
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     9
+# [ERROR]     4
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     4
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3193401542
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/driver.sv(76) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS FINAL PHASE IN DRIVER
+# UVM_ERROR ../agent_top/driver.sv(77) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/driver.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/driver.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   38
+# UVM_WARNING :    4
+# UVM_ERROR :    4
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     8
+# [ERROR]     4
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     4
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 2222411950
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_FATAL ../agent_top/driver.sv(32) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     1
+# [FATAL]     1
+# [RNTST]     1
+# [ram_agent]     1
+# [test]     1
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 0 ns  Iteration: 9  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3897549166
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_FATAL ../agent_top/driver.sv(32) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     1
+# [FATAL]     1
+# [RNTST]     1
+# [ram_agent]     1
+# [test]     1
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 0 ns  Iteration: 9  Region: /uvm_pkg::uvm_phase::m_run_phases
+# vsim -do {; run -all; exit} -l s.log -sva -c -sv_seed random -novopt work.top 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing H:\UVM\Lab02\SIM\work.top
+# Refreshing H:\UVM\Lab02\SIM\work.pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg
+# Loading work.top
+# Loading C:\questasim_10.0b\uvm-1.0p1\win32\uvm_dpi.dll
+# Sv_Seed = 3524249786
+#  
+#  run -all 
+# ----------------------------------------------------------------
+# UVM-1.0p1 
+# (C) 2007-2011 Mentor Graphics Corporation
+# (C) 2007-2011 Cadence Design Systems, Inc.
+# (C) 2006-2011 Synopsys, Inc.
+# ----------------------------------------------------------------
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../test/test.sv(36) @ 0: uvm_test_top [test] THIS IS BUILD PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(37) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS BUILD PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(33) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS BUILD IN AGENT
+# UVM_INFO ../agent_top/driver.sv(31) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS BUILD PHASE IN DRIVER
+# UVM_INFO ../agent_top/driver.sv(37) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CONNECT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(38) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS CONNECT PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(44) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CONNECT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(40) @ 0: uvm_test_top [test] THIS IS CONNECT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(42) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS END OF ELABORATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(44) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS END_OF_ELABORATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(49) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS AN END OF ELABORATION OF agt_top
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------
+# Name                   Type                    Size  Value
+# ----------------------------------------------------------
+# uvm_test_top           test                    -     @455 
+#   agnt_top_h           agent_top               -     @464 
+#     agnth              ram_agent               -     @472 
+#       drvh             driver                  -     @481 
+#         rsp_port       uvm_analysis_port       -     @496 
+#         sqr_pull_port  uvm_seq_item_pull_port  -     @488 
+# ----------------------------------------------------------
+# 
+# UVM_INFO ../test/test.sv(46) @ 0: uvm_test_top [test] THIS IS END_OF_ELABORATION PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(47) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS START OF SIMULATION PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(50) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] THIS IS START_OF_SIMULATION PHASE IN AGENT
+# UVM_INFO ../agent_top/agt_top.sv(55) @ 0: uvm_test_top.agnt_top_h [Agent_Top] THIS IS START OF SIMULATION OF agt_top
+# UVM_INFO ../test/test.sv(52) @ 0: uvm_test_top [test] THIS IS START_OF_SIMULATION PHASE IN TEST
+# UVM_INFO ../agent_top/agt_top.sv(64) @ 0: uvm_test_top.agnt_top_h [Agent_Top ] THIS IS RUN PHASE OF agt_top
+# UVM_INFO ../agent_top/Agent.sv(57) @ 0: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Run Phase
+# UVM_INFO ../agent_top/driver.sv(54) @ 0: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS RUN PHASE IN DRIVER
+# UVM_INFO ../test/test.sv(58) @ 10: uvm_test_top [test] THIS IS RUN PHASE IN TEST
+# UVM_INFO verilog_src/uvm-1.0p1/src/base/uvm_objection.svh(1116) @ 10: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../agent_top/driver.sv(60) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS EXTRACT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(63) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Extract Phase
+# UVM_INFO ../agent_top/agt_top.sv(70) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS EXTRACT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(65) @ 10: uvm_test_top [test] THIS IS EXTRACT PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(66) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS CHECK PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(68) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Check Phase
+# UVM_INFO ../agent_top/agt_top.sv(76) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS CHECK PHASE OF agt_top
+# UVM_INFO ../test/test.sv(70) @ 10: uvm_test_top [test] THIS IS CHECK PHASE IN TEST
+# UVM_INFO ../agent_top/driver.sv(71) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS REPORT PHASE IN DRIVER
+# UVM_INFO ../agent_top/Agent.sv(73) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is Report Phase
+# UVM_INFO ../agent_top/agt_top.sv(82) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS REPORT PHASE OF agt_top
+# UVM_INFO ../test/test.sv(75) @ 10: uvm_test_top [test] THIS IS REPORT PHASE IN TEST
+# UVM_INFO ../test/test.sv(80) @ 10: uvm_test_top [test] THIS IS FINAL PHASE IN TEST
+# UVM_ERROR ../test/test.sv(81) @ 10: uvm_test_top [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../test/test.sv(82) @ 10: uvm_test_top [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/agt_top.sv(87) @ 10: uvm_test_top.agnt_top_h [Agent_Top] THIS IS FINAL PHASE OF agt_top
+# UVM_ERROR ../agent_top/agt_top.sv(88) @ 10: uvm_test_top.agnt_top_h [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/agt_top.sv(89) @ 10: uvm_test_top.agnt_top_h [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/Agent.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth [ram_agent] This is FINAL Phase
+# UVM_ERROR ../agent_top/Agent.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/Agent.sv(80) @ 10: uvm_test_top.agnt_top_h.agnth [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_INFO ../agent_top/driver.sv(76) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [DRIVER] THIS IS FINAL PHASE IN DRIVER
+# UVM_ERROR ../agent_top/driver.sv(77) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [ERROR] ERROR OCCURED SO GO BACK AND CHECK
+# UVM_WARNING ../agent_top/driver.sv(78) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [WARNING] WARNING!!!!WARNING!!!WARNING!!!!
+# UVM_FATAL ../agent_top/driver.sv(79) @ 10: uvm_test_top.agnt_top_h.agnth.drvh [FATAL] FATAL ERROR OCCURED!!BAD HANDLE AND REFERENCE
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   39
+# UVM_WARNING :    4
+# UVM_ERROR :    4
+# UVM_FATAL :    1
+# ** Report counts by id
+# [Agent_Top]     8
+# [Agent_Top ]     1
+# [DRIVER]     9
+# [ERROR]     4
+# [FATAL]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [WARNING]     4
+# [ram_agent]     9
+# [test]     9
+# ** Note: $finish    : C:/questasim_10.0b/win32/../verilog_src/uvm-1.0p1/src/base/uvm_report_object.svh(280)
+#    Time: 10 ns  Iteration: 32  Region: /uvm_pkg::uvm_phase::m_run_phases
