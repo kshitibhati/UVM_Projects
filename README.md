@@ -78,13 +78,3 @@ Practice and learning exercises related to UVM and verification concepts.
 - SystemVerilog
 - UVM Library
 
----
-
-## How to Run
-
-Example compilation and simulation flow:
-
-```bash
-vlog *.sv
-vsim top
-run -all
